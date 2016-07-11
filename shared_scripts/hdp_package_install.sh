@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#HDP packages to install
+
 # Preinstall HDP packages
 HDP_VERSION="$1"
 HDP_OS="$2"
@@ -20,7 +22,7 @@ case "$HDP_OS" in
       "HDP-2.3.4.7")
         HDP_REPO="http://public-repo-1.hortonworks.com/HDP/centos6/2.x/updates/2.3.4.7/hdp.repo"
         ;;
-      "HDP-2.3.4.18-9")
+      "HDP-2.3.4.14-9")
         HDP_REPO="http://private-repo-1.hortonworks.com/HDP/centos6/2.x/updates/2.3.4.14-9/hdp.repo"
         ;;
       "HDP-2.4.2.0")
