@@ -8,19 +8,12 @@
     {
       "type": "shell",
       "execute_command": "echo 'vagrant'|sudo -S sh '{{.Path}}' {{ user `hdp_version`}} {{ user `hdp_os` }}",
-      "pause_before": "1s",
-      "scripts": [
-        "../shared_scripts/hdp_package_install.sh"
-      ]
-    },
-    {
-      "type": "shell",
-      "execute_command": "echo 'vagrant'|sudo -S sh '{{.Path}}'",
       "override": {
         "virtualbox-iso": {
           "scripts": [
             "scripts/base.sh",
             "scripts/vagrant.sh",
+            "../shared_scripts/hdp_package_install.sh",
             "scripts/virtualbox.sh",
             "scripts/cleanup.sh"
           ]
@@ -29,6 +22,7 @@
           "scripts": [
             "scripts/base.sh",
             "scripts/vagrant.sh",
+            "../shared_scripts/hdp_package_install.sh",
             "scripts/vmware.sh",
             "scripts/cleanup.sh"
           ]
