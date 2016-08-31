@@ -15,7 +15,8 @@
             "scripts/vagrant.sh",
             "../shared_scripts/hdp_package_install.sh",
             "scripts/virtualbox.sh",
-            "scripts/cleanup.sh"
+            "scripts/cleanup.sh",
+            "scripts/zerodisk.sh"
           ]
         },
         "vmware-iso": {
@@ -24,7 +25,8 @@
             "scripts/vagrant.sh",
             "../shared_scripts/hdp_package_install.sh",
             "scripts/vmware.sh",
-            "scripts/cleanup.sh"
+            "scripts/cleanup.sh",
+            "scripts/zerodisk.sh"
           ]
         }
       }
