@@ -34,6 +34,9 @@ case "$HDP_OS" in
       "HDP-2.5.0.0")
         HDP_REPO="http://public-repo-1.hortonworks.com/HDP/centos6/2.x/updates/2.5.0.0/hdp.repo"
         ;;
+      "HDP-2.5.3.0")
+        HDP_REPO="http://public-repo-1.hortonworks.com/HDP/centos7/2.x/updates/2.5.3.0/hdp.repo"
+        ;;
       *)
         echo "HDP_VERSION: $HDP_VERSION not handled"
         exit 1
